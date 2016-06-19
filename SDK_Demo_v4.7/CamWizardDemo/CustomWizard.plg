@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CustomWizard - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP355.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../Include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "HI_OS_WIN32" /D HI_OS_TYPE=HI_OS_WIN32 /FR"Debug/" /Fp"Debug/CustomWizard.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\SDK\Source\SDK_Demo\CamWizardDemo\Wizard.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP355.tmp" 
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP356.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/HiCamSearcher.pdb" /debug /machine:I386 /out:"../Debug/HiCamSearcher.exe" /pdbtype:sept /libpath:"../Lib" 
+.\Debug\CheckUser.obj
+.\Debug\CustomWizard.obj
+.\Debug\CustomWizardDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\Step1.obj
+.\Debug\Step2.obj
+.\Debug\Step3.obj
+.\Debug\Step4.obj
+.\Debug\Wizard.obj
+.\Debug\CustomWizard.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP356.tmp"
+<h3>Output Window</h3>
+Compiling...
+Wizard.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/CustomWizard.bsc"  .\Debug\StdAfx.sbr .\Debug\CheckUser.sbr .\Debug\CustomWizard.sbr .\Debug\CustomWizardDlg.sbr .\Debug\Step1.sbr .\Debug\Step2.sbr .\Debug\Step3.sbr .\Debug\Step4.sbr .\Debug\Wizard.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+HiCamSearcher.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

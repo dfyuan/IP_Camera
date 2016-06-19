@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SDKDemo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/SDKDemo.res" /d "NDEBUG" /d "_AFXDLL" "D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\SDKDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4CD.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../Include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D HI_OS_TYPE=HI_OS_WIN32 /D "HI_OS_WIN32" /Fr"Release/" /Fp"Release/SDKDemo.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\AudioDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\InputAlarmDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\NetDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\OsdDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\OtherDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\PlaybackDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\PlayWnd.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\PtzDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\ScreenPannel.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\SDKDemo.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\SDKDemoDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\TimeDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\VideoDlg.cpp"
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\WifiDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4CD.tmp" 
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4CE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../Include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D HI_OS_TYPE=HI_OS_WIN32 /D "HI_OS_WIN32" /Fr"Release/" /Fp"Release/SDKDemo.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\SDK\中性SDK\SDK版本\SDK_Demo_v4.7\SDKDemo\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4CE.tmp" 
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4CF.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/SDKDemo.pdb" /machine:I386 /out:"../bin/SDKDemo.exe" /libpath:"../Lib" 
+".\Release\AudioDlg.obj"
+".\Release\InputAlarmDlg.obj"
+".\Release\NetDlg.obj"
+".\Release\OsdDlg.obj"
+".\Release\OtherDlg.obj"
+".\Release\PlaybackDlg.obj"
+".\Release\PlayWnd.obj"
+".\Release\PtzDlg.obj"
+".\Release\ScreenPannel.obj"
+".\Release\SDKDemo.obj"
+".\Release\SDKDemoDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\TimeDlg.obj"
+".\Release\VideoDlg.obj"
+".\Release\WifiDlg.obj"
+".\Release\SDKDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4CF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AudioDlg.cpp
+InputAlarmDlg.cpp
+NetDlg.cpp
+OsdDlg.cpp
+OtherDlg.cpp
+PlaybackDlg.cpp
+PlayWnd.cpp
+PtzDlg.cpp
+ScreenPannel.cpp
+SDKDemo.cpp
+SDKDemoDlg.cpp
+TimeDlg.cpp
+VideoDlg.cpp
+WifiDlg.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4D1.tmp" with contents
+[
+/nologo /o"Release/SDKDemo.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\AudioDlg.sbr"
+".\Release\InputAlarmDlg.sbr"
+".\Release\NetDlg.sbr"
+".\Release\OsdDlg.sbr"
+".\Release\OtherDlg.sbr"
+".\Release\PlaybackDlg.sbr"
+".\Release\PlayWnd.sbr"
+".\Release\PtzDlg.sbr"
+".\Release\ScreenPannel.sbr"
+".\Release\SDKDemo.sbr"
+".\Release\SDKDemoDlg.sbr"
+".\Release\TimeDlg.sbr"
+".\Release\VideoDlg.sbr"
+".\Release\WifiDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\Fanjf\LOCALS~1\Temp\RSP4D1.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SDKDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

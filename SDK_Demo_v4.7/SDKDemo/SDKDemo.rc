@@ -1,0 +1,662 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SDKDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SDKDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SDKDEMO_DIALOG DIALOGEX 0, 0, 665, 438
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SDK"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDC_BTN_CONNECT,582,115,52,14
+    PUSHBUTTON      "↑",IDC_BTN_UP,528,176,17,15,BS_FLAT
+    PUSHBUTTON      "↓",IDC_BTN_DOWN,528,208,17,15,BS_FLAT
+    PUSHBUTTON      "■",IDC_BTN_PTZSTOP,528,192,17,15,BS_FLAT
+    PUSHBUTTON      "←",IDC_BTN_LEFT,510,192,17,15,BS_FLAT
+    PUSHBUTTON      "→",IDC_BTN_RIGHT,546,192,17,15,BS_FLAT
+    EDITTEXT        IDC_EDIT_USERNAME,548,57,85,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,548,71,85,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT,548,43,50,12,ES_AUTOHSCROLL
+    RTEXT           "Host",IDC_STATIC,501,16,42,8
+    RTEXT           "User",IDC_STATIC,501,61,42,8
+    RTEXT           "Password",IDC_STATIC,501,75,42,8
+    RTEXT           "Port",IDC_STATIC,501,47,42,8
+    PUSHBUTTON      "+",IDC_BTN_PTZZOOMIN,577,176,17,15,BS_FLAT
+    PUSHBUTTON      "-",IDC_BTN_PTZZOOMOUT,627,176,17,15,BS_FLAT
+    PUSHBUTTON      "Photo",IDC_BTN_PHOTO,534,152,41,14
+    PUSHBUTTON      "Record",IDC_BTN_RECORD,576,152,41,14
+    PUSHBUTTON      "Playback",IDC_BTN_PLAYBACK,617,152,40,14
+    GROUPBOX        "Login Info",IDC_STATIC,492,2,165,132
+    GROUPBOX        "",IDC_STATIC,492,166,165,97
+    PUSHBUTTON      "Search",IDC_BTN_SEARCH,603,30,30,24
+    PUSHBUTTON      "Talk",IDC_BTN_TALK,493,152,40,14
+    CTEXT           "Zoom",IDC_T_ZOOM,595,180,32,8
+    PUSHBUTTON      "SET",IDC_BTN_PRESET,578,226,17,15,BS_FLAT
+    PUSHBUTTON      "GO",IDC_BTN_PRECALL,627,226,17,15,BS_FLAT
+    EDITTEXT        IDC_EDIT_PRESET,601,226,21,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Trans",IDC_BTN_PTZTrans,629,244,23,15,BS_FLAT
+    EDITTEXT        IDC_EDIT_PTZDATA,568,245,59,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER_BRIGHT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,357,192,102,11
+    CONTROL         "Slider1",IDC_SLIDER_SATURATION,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,357,204,102,11
+    CONTROL         "Slider1",IDC_SLIDER_CONTRAST,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,357,216,102,11
+    CONTROL         "Slider1",IDC_SLIDER_HUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,357,228,102,11
+    PUSHBUTTON      "Default",IDC_BTN_DEFAULT,421,240,32,14
+    RTEXT           "Brightness:",IDC_T_BRIGHT,309,194,45,8
+    RTEXT           "Saturation:",IDC_T_SATURATION,309,206,45,8
+    RTEXT           "Contrast:",IDC_T_CONTRAST,309,218,45,8
+    RTEXT           "Hue:",IDC_T_HUE,309,230,45,8
+    LTEXT           "(HD does not support Hue)",IDC_T_HDHUE,307,244,101,8
+    EDITTEXT        IDC_EDIT_DEVTYPE,548,85,85,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_VENDOR,548,99,85,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Equipment",IDC_STATIC,501,89,42,8
+    RTEXT           "Factory",IDC_STATIC,501,102,42,8
+    GROUPBOX        "MD",IDC_STATIC,492,281,165,105
+    CONTROL         "Show Frame Rate",IDC_CHECK_SHOWINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,330,417,76,10
+    LTEXT           "",IDC_ST_SHOWINFO,408,418,73,8
+    CONTROL         "Slider5",IDC_SLIDER_VOLUME,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,379,376,74,11
+    PUSHBUTTON      "Listen",IDC_BTN_SETMUTE,457,373,27,13
+    GROUPBOX        "",IDC_STATIC,320,392,165,40
+    PUSHBUTTON      "Clear",IDC_BTN_CLEARMD,320,374,37,13
+    PUSHBUTTON      "Apply",IDC_BTN_SETMD,611,364,37,13
+    COMBOBOX        IDC_COMBO_SERVER,548,13,98,416,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_MDINFO,7,373,304,59,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "VIDEO",IDC_BTN_VIDEO,495,390,54,14
+    PUSHBUTTON      "AUDIO",IDC_BTN_AUDIO,550,390,54,14
+    PUSHBUTTON      "PTZ Setting",IDC_BTN_PTZ,495,419,54,14
+    PUSHBUTTON      "Alarm",IDC_BTN_MD,495,404,54,14
+    PUSHBUTTON      "OTHER",IDC_BTN_OTHER,603,419,54,14
+    CONTROL         "Enable",IDC_CHECK_MD1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,618,303,35,10
+    LTEXT           "Area1",IDC_T_AERA1,511,303,21,8
+    CONTROL         "Show Alarm Area",IDC_CHECK_SHOWALARM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,330,403,76,10
+    CONTROL         "Edit Alarm Area",IDC_CHECK_EDITALARM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,516,366,76,10
+    CONTROL         "Slider1",IDC_SLIDER_SENSITIVITY1,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,537,302,63,12
+    CONTROL         "Slider1",IDC_SLIDER_SENSITIVITY2,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,537,317,63,12
+    CONTROL         "Slider1",IDC_SLIDER_SENSITIVITY3,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,537,332,63,12
+    CONTROL         "Slider1",IDC_SLIDER_SENSITIVITY4,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,537,345,63,12
+    CONTROL         "Enable",IDC_CHECK_MD2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,618,316,35,10
+    CONTROL         "Enable",IDC_CHECK_MD3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,618,330,35,10
+    CONTROL         "Enable",IDC_CHECK_MD4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,618,345,35,10
+    LTEXT           "0",IDC_T_MD1,602,304,12,8
+    LTEXT           "0",IDC_T_MD2,601,318,12,8
+    LTEXT           "0",IDC_T_MD3,601,333,12,8
+    LTEXT           "0",IDC_T_MD4,602,346,12,8
+    LTEXT           "Area2",IDC_T_AERA2,511,319,21,8
+    LTEXT           "Area3",IDC_T_AERA3,511,334,21,8
+    LTEXT           "Area4",IDC_T_AERA4,511,348,21,8
+    RTEXT           "Speed",IDC_T_SPEED,501,250,25,8
+    COMBOBOX        IDC_COMBO_TYPE,548,28,50,58,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Stream",IDC_STATIC,501,31,42,8
+    COMBOBOX        IDC_COMBO_SPEED,529,246,33,311,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Home",IDC_BTN_PTZHOME,355,7,27,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cruise-H",IDC_BTN_PTZCRUISE_H,439,7,48,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cruise-V",IDC_BTN_PTZCRUISE_V,387,7,48,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_COMBO_PTZTYPE,529,228,40,311,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "PTZ Control",IDC_BTN_PTZCTRL,493,266,85,14
+    PUSHBUTTON      "Color Setting",IDC_BTN_COLOR,578,266,79,14
+    RTEXT           "Type",IDC_T_TYPE,502,231,24,8
+    COMBOBOX        IDC_COMBO_RECTYPE,549,138,42,44,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Record Format",IDC_STATIC,492,141,54,8
+    PUSHBUTTON      "OSD",IDC_BTN_OSD,603,390,54,14
+    PUSHBUTTON      "+",IDC_BTN_IRISBIG,577,192,17,15,BS_FLAT
+    PUSHBUTTON      "Set Time",IDC_BTN_SETTIME,550,419,54,14
+    PUSHBUTTON      "-",IDC_BTN_IRISSMALL,627,192,17,15,BS_FLAT
+    CTEXT           "Iris",IDC_T_IRIS,595,195,32,8
+    PUSHBUTTON      "+",IDC_BTN_FOCUSIN,577,208,17,15,BS_FLAT
+    PUSHBUTTON      "-",IDC_BTN_FOCUSOUT,627,208,17,15,BS_FLAT
+    CTEXT           "Focus",IDC_T_FOCUS,595,212,32,8
+    PUSHBUTTON      "NetWork",IDC_BTN_NET,550,404,54,14
+    COMBOBOX        IDC_COMBO_CHANNEL,526,116,53,152,CBS_DROPDOWNLIST | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "WIFI",IDC_BTN_WIFI,603,404,54,14
+    PUSHBUTTON      "Storage path",IDC_BTN_SEL,591,137,66,14
+    PUSHBUTTON      "Snap",IDC_BTN_NET_SNAP,508,115,40,14,NOT WS_VISIBLE
+END
+
+IDD_PLAYBACK_DIALOG DIALOG DISCARDABLE  0, 0, 363, 312
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Playback"
+FONT 9, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "Open",IDC_BTN_OPEN,7,293,30,12,BS_FLAT
+    CONTROL         "",IDC_VIEW,"Static",SS_BLACKRECT | NOT WS_VISIBLE | 
+                    WS_BORDER,7,7,349,269
+    PUSHBUTTON      "Play",IDC_BTN_PLAY,38,293,30,12,BS_FLAT
+    PUSHBUTTON      "Stop",IDC_BTN_STOP,69,293,30,12,BS_FLAT
+    CONTROL         "Slider1",IDC_SLIDER_POS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,7,281,349,11
+    PUSHBUTTON      "Frame",IDC_BTN_FRAME,100,293,30,12,BS_FLAT
+    COMBOBOX        IDC_COMBO_RATE,165,293,47,75,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "00:00:00/00:00:00",IDC_SHOW_TIME,288,294,68,8
+    PUSHBUTTON      "Photo",IDC_BTN_PHOTO,131,293,30,12,BS_FLAT
+    CONTROL         "Slider5",IDC_SLIDER_VOLUME,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,240,295,35,10
+    PUSHBUTTON      "Listen",IDC_BTN_SETMUTE,214,293,23,12,BS_FLAT
+END
+
+IDD_TIME_DIALOG DIALOG DISCARDABLE  0, 0, 209, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Time"
+FONT 9, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,152,91,50,14
+    PUSHBUTTON      "Set Time",IDC_BTN_SET,93,91,50,14
+    CONTROL         "Sync with computer time ",IDC_CHECK_SYNC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,42,54,96,10
+    CONTROL         "DateTimePicker1",IDC_DT_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,42,29,68,14
+    CONTROL         "DateTimePicker1",IDC_DT_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,113,29,68,
+                    14
+    GROUPBOX        "",IDC_STATIC,7,7,195,75
+END
+
+IDD_OSD_DLG DIALOG DISCARDABLE  0, 0, 211, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OSD"
+FONT 9, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,154,92,50,14
+    CONTROL         "Time Stamp",IDC_CHECK_TIMEOSD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,63,59,9
+    CONTROL         "Camera Name",IDC_CHECK_NAMEOSD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,45,63,59,9
+    LTEXT           "OSD Name",IDC_T_OSDNAME,45,22,45,8
+    EDITTEXT        IDC_EDIT_OSDNAME,45,34,87,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_BTN_SETOSD,142,34,38,14
+    GROUPBOX        "",IDC_STATIC,7,7,197,78
+END
+
+IDD_NET_DLG DIALOG DISCARDABLE  0, 0, 209, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Network"
+FONT 9, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,96,200,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,200,50,14
+    COMBOBOX        IDC_DHCP_COMBO,77,21,80,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DNSMODE_COMBO,77,113,80,54,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "IPAddress1",IDC_IP_IPADDRESS,"SysIPAddress32",
+                    WS_TABSTOP,77,39,80,13
+    CONTROL         "IPAddress1",IDC_SUBNET_IPADDRESS,"SysIPAddress32",
+                    WS_TABSTOP,77,58,80,13
+    CONTROL         "IPAddress1",IDC_PDNS_IPADDRESS,"SysIPAddress32",
+                    WS_TABSTOP,77,131,80,13
+    CONTROL         "IPAddress1",IDC_SDNS_IPADDRESS,"SysIPAddress32",
+                    WS_TABSTOP,77,150,80,13
+    CONTROL         "IPAddress1",IDC_GATEWAY_IPADDRESS,"SysIPAddress32",
+                    WS_TABSTOP,77,77,80,13
+    RTEXT           "IP Mode",IDC_STATIC,15,23,57,8
+    RTEXT           "IP Address",IDC_STATIC,15,42,57,8
+    RTEXT           "Mask",IDC_STATIC,15,60,57,8
+    RTEXT           "Gateway",IDC_STATIC,15,79,57,8
+    RTEXT           "DNS Mode",IDC_STATIC,15,115,57,8
+    RTEXT           "Primary DNS",IDC_STATIC,15,134,57,8
+    RTEXT           "Second DNS",IDC_STATIC,15,153,57,8
+    EDITTEXT        IDC_MAC_EDIT,77,94,80,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_HTTP_PORT_EDIT,77,170,38,14,ES_AUTOHSCROLL
+    RTEXT           "Http Port",IDC_STATIC,15,173,57,8
+    RTEXT           "Mac Address",IDC_STATIC,15,98,57,8
+    GROUPBOX        "",IDC_STATIC,7,7,195,186
+END
+
+IDD_WIFI_DLG DIALOGEX 0, 0, 259, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wifi"
+FONT 9, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,145,232,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,232,50,14
+    CONTROL         "List1",IDC_LIST_WIFI,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_BORDER | WS_TABSTOP,7,7,245,72
+    PUSHBUTTON      "Search",IDC_BTN_SEARCH,202,83,50,14,WS_DISABLED
+    CONTROL         "Enable Wifi",IDC_CHECK_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,108,48,10
+    RTEXT           "SSID",IDC_STATIC,45,125,52,8
+    COMBOBOX        IDC_COMBO_MODE,103,138,52,102,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_AUTH,103,154,52,102,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ENC,103,170,52,102,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_KEY,103,186,89,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_KEYCK,103,202,89,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Wifi Mode",IDC_STATIC,45,141,52,8
+    RTEXT           "Securty Mode",IDC_STATIC,45,157,52,8
+    RTEXT           "WPA Algorithm",IDC_STATIC,45,173,52,8
+    RTEXT           "Key",IDC_STATIC,45,189,52,8
+    RTEXT           "Re-type Key",IDC_STATIC,45,204,52,8
+    GROUPBOX        "",IDC_STATIC,7,97,245,128
+    PUSHBUTTON      "Check",IDC_BTN_CHECK,86,232,50,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT_SSID,103,122,89,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Progress1",IDC_PROGRESS_S,"msctls_progress32",0x0,7,84,
+                    187,13,WS_EX_STATICEDGE
+    CONTROL         "Progress2",IDC_PROGRESS_C,"msctls_progress32",0x0,7,233,
+                    73,13,WS_EX_STATICEDGE
+END
+
+IDD_PTZ_DLG DIALOG DISCARDABLE  0, 0, 167, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PTZ Setting"
+FONT 9, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,52,150,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,150,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,153,132
+    RTEXT           "Address",IDC_T_ADDRESS,25,29,39,8
+    RTEXT           "Protocal",IDC_T_PROTOCOL,25,47,39,8
+    RTEXT           "Baudrate",IDC_T_BAUD,25,65,39,8
+    RTEXT           "Data Bit",IDC_T_DATABIT,25,81,39,8
+    RTEXT           "Stop Bit",IDC_T_STOPBIT,25,97,39,8
+    RTEXT           "Check Type",IDC_T_PARITY,25,114,39,8
+    EDITTEXT        IDC_EDIT_ADDRESS,70,26,56,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_PROTOCOL,71,45,56,109,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATABIT,71,78,56,101,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STOPBIT,71,95,56,97,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PARITY,71,112,56,88,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUD,71,62,56,109,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_AUDIO_DLG DIALOG DISCARDABLE  0, 0, 203, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AUDIO"
+FONT 9, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,152,186,44,14
+    GROUPBOX        "",IDC_STATIC,7,83,189,98
+    RTEXT           "Audio Capture",IDC_T_AUSWITCH,38,123,49,8
+    RTEXT           "Audio Type",IDC_T_AUFORMAT,38,140,49,8
+    RTEXT           "Input Volume",IDC_T_AUINPUT,22,23,49,8
+    COMBOBOX        IDC_COMBO_AUFORMAT,94,137,49,58,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_BTN_SETAUDIO,94,155,49,13
+    PUSHBUTTON      "Apply",IDC_BTN_SETINPUT,134,21,50,13
+    COMBOBOX        IDC_COMBO_AUSWITCH,94,120,49,58,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,7,189,73
+    COMBOBOX        IDC_COMBO_STREAM,94,103,49,105,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Output Volume",IDC_T_AUINPUT2,23,43,49,8
+    PUSHBUTTON      "Apply",IDC_BTN_SETOUTPUT,135,41,50,13
+    EDITTEXT        IDC_EDIT_AUINPUT,79,20,51,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_AUOUTPUT,79,40,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Iuput Mode",IDC_T_AUINPUT3,22,61,49,8
+    PUSHBUTTON      "Apply",IDC_BTN_SETINPUTMODE,135,60,50,13
+    COMBOBOX        IDC_COMBO_AUINPUT,78,60,51,42,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_INPUT_DLG DIALOG DISCARDABLE  0, 0, 199, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input Alarm"
+FONT 9, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,86,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,142,100,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,185,83
+    RTEXT           "External Alarm Mode",IDC_T_EAM,14,58,76,8
+    RTEXT           "External Alarm",IDC_T_EA,27,37,63,8
+    COMBOBOX        IDC_COMBO_EA,96,35,55,97,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_EAM,96,56,55,97,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OTHER_DLG DIALOG DISCARDABLE  0, 0, 203, 152
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Other"
+FONT 9, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,146,131,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,189,117
+    CONTROL         "Flip",IDC_CHECK_FLIP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,46,48,9
+    CONTROL         "Mirror",IDC_CHECK_MIRROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,53,47,34,9
+    RTEXT           "(CCD Does Not Support)",IDC_T_CCD,31,29,100,8
+    COMBOBOX        IDC_COMBO_NIGHTVISION,72,86,48,86,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_WHITEBALANCE,72,65,48,72,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_BTN_SETDISP,130,65,38,12
+    RTEXT           "Infrared",IDC_T_NIGHTVISION,34,88,32,8
+    RTEXT           "Scene",IDC_T_WHITEBALANCE,34,68,32,8
+    PUSHBUTTON      "Apply",IDC_BTN_NIGHT,131,86,38,12
+    PUSHBUTTON      "Reboot",IDC_BTN_REBOOT,7,132,50,13
+    PUSHBUTTON      "Reset",IDC_BTN_RESET,58,132,50,13
+END
+
+IDD_VIDEO_DLG DIALOG DISCARDABLE  0, 0, 211, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VIDEO"
+FONT 9, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,154,202,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,197,190
+    RTEXT           "Resolution",IDC_T_RESOLUTION,27,85,58,8
+    COMBOBOX        IDC_COMBO_RESOLUTION,91,82,44,89,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Frequency",IDC_T_FREQUENCY,26,29,58,8
+    COMBOBOX        IDC_COMBO_FREQUENCY,90,26,44,52,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_BTN_SETSIZE,146,81,35,12
+    RTEXT           "Bit Rate",IDC_T_BITRATE,27,101,58,8
+    RTEXT           "Frame Rate",IDC_T_FRAMERATE,27,118,58,8
+    EDITTEXT        IDC_EDIT_BITRATE,91,98,44,12,ES_AUTOHSCROLL
+    RTEXT           "Rate Quality",IDC_T_QUALITY,27,169,58,8
+    COMBOBOX        IDC_COMBO_QUALITY,91,166,44,120,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_BTN_SETVIDEO,146,167,35,12
+    COMBOBOX        IDC_COMBO_FRAMERATE,91,115,44,262,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Rate Control",IDC_T_LCBR,27,152,58,8
+    EDITTEXT        IDC_EDIT_IFRAME,91,132,44,12,ES_AUTOHSCROLL
+    RTEXT           "I Frame Spaced",IDC_T_IFRAME,27,135,58,8
+    LTEXT           "(2-150)",IDC_T_INTERVAL,149,134,25,8
+    COMBOBOX        IDC_COMBO_LCBR,91,149,44,58,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_BTN_SETFQ,146,27,35,12
+    COMBOBOX        IDC_COMBO_STREAM,91,64,44,51,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,2
+ PRODUCTVERSION 4,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SDKDemo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "4, 0, 0, 2\0"
+            VALUE "InternalName", "SDKDemo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SDKDemo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SDKDemo 应用程序\0"
+            VALUE "ProductVersion", "4, 0, 0, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SDKDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 657
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 433
+    END
+
+    IDD_PLAYBACK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 356
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+    END
+
+    IDD_TIME_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_OSD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_NET_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_WIFI_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_PTZ_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_AUDIO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_INPUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_OTHER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_VIDEO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TALK                BITMAP  DISCARDABLE     "res\\talk.bmp"
+IDB_REC                 BITMAP  DISCARDABLE     "res\\rec.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SDKDemo(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SDKDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
