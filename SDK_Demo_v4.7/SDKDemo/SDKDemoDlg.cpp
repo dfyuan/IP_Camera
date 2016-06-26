@@ -853,7 +853,7 @@ void CSDKDemoDlg::OnBtnConnect()
 	s32Ret = HI_SDK_SetEventCallBack(lHandle, (HI_U32)lHandle, OnEventCallBack, this);
 	s32Ret = HI_SDK_SetMessageCallBack(lHandle, (HI_U32)lHandle, OnMessageCallBack, this);
 	s32Ret = HI_SDK_SetDrawCallBack(lHandle, (HI_U32)lHandle, OnDrawCallBack, this);
-	//s32Ret = HI_SDK_SetDecCallBack(lHandle, u32Chn, OnDecCallBack, this);
+	s32Ret = HI_SDK_SetDecCallBack(lHandle, u32Chn, OnDecCallBack, this);
 	HI_SDK_SetDisplayCallback(lHandle, HI_TRUE);
 	
 	HI_S_STREAM_INFO_EXT struStreamInfo;
@@ -1075,14 +1075,31 @@ void CSDKDemoDlg::OnBtnPlayback()
 	PB.DoModal();
 }
 
-
+cv::Mat m_mat;
+YuvToRgb rgb;
+std::string str = "test";
 HRESULT CSDKDemoDlg::OnDecCallBack(HI_U32 u32Chn,
 								   const FRAME_INFO_S *pFrameInfo,
 								   HI_VOID *pUserData)
 {
 	//CSDKDemoDlg *pSDKDemo = (CSDKDemoDlg*)pUserData;
-	printf("%d, %d, %d\n", u32Chn, pFrameInfo->nHeight, pFrameInfo->nWidth);
-	
+	//printf("%d, %d, %d\n", u32Chn, pFrameInfo->nHeight, pFrameInfo->nWidth);
+
+    if(m_mat.empty() || m_mat.cols != pFrameInfo->nWidth || m_mat.rows != pFrameInfo->nHeight)
+    {
+        m_mat.create(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC3);
+        cv::namedWindow(str, 0);
+        cv::resizeWindow(str, m_mat.cols * 0.5, m_mat.rows * 0.5);
+    }
+
+//     if(rgb.YV12ToBGR24_Pinknoise(pFrameInfo->pY, pFrameInfo->pU, pFrameInfo->pV, m_mat.datastart, pFrameInfo->nWidth, pFrameInfo->nHeight) == false)
+    if(!rgb.YUV12ToBGR(pFrameInfo, m_mat.datastart))  
+    {  
+        return NULL;  
+    } 
+    
+    cv::imshow(str, m_mat);                        
+    cv::waitKey(1);
 	return 0;
 }
 

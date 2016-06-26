@@ -12,6 +12,11 @@
 #include "hi_vscp_devs_cli.h"
 #include "ScreenPannel.h"
 
+#include "opencv2/opencv.hpp" 
+#include "yuvToRgb.h"
+// extern "C" {
+// #include "yuv2rgb.h"
+// }
 
 /////////////////////////////////////////////////////////////////////////////
 // CSDKDemoDlg dialog
