@@ -86,3 +86,7 @@ don't do this, some of the UI elements of your application will remain in the
 language of the operating system.
 
 /////////////////////////////////////////////////////////////////////////////
+
+
+
+警告	44	warning MSB8012: TargetPath(D:\workpath\king\code\IP_Camera\SDK_Demo_v4.7\SDKDemo\.\Debug\SDKDemo.exe) 与 Linker 的 OutputFile 属性值(D:\workpath\king\code\IP_Camera\SDK_Demo_v4.7\Debug\SDKDemo.exe)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。	C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets	990	6	SDKDemo
