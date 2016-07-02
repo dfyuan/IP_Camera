@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{13523e28-702e-4595-b076-59a14ea6ef22}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a49691a9-1dc0-42f7-8552-1a09d7b754aa}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b9753544-8b3b-430d-aa1a-3075f4147244}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="yuv420ToRgb">
+      <UniqueIdentifier>{64d812af-620f-4153-ae38-6cd479c5b905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objectTrack">
+      <UniqueIdentifier>{f9e45288-2317-4237-8d98-bde7a88867b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputAlarmDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OsdDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaybackDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PtzDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenPannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKDemoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WifiDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv2rgb16tab.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv420rgb565c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv420rgb888c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv420rgb8888c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv422rgb565c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv422rgb888c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv422rgb8888c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv444rgb565c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv444rgb888c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv2rgb\yuv444rgb8888c.c">
+      <Filter>yuv420ToRgb</Filter>
+    </ClCompile>
+    <ClCompile Include="yuvToRgb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objectTrack\objectTrack.cpp">
+      <Filter>objectTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="objectTrack\frameProcessor.cpp">
+      <Filter>objectTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="objectTrack\CamShift.cpp">
+      <Filter>objectTrack</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SDKDemo.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputAlarmDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OsdDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaybackDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PtzDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenPannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKDemoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WifiDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yuv2rgb\yuv2rgb.h">
+      <Filter>yuv420ToRgb</Filter>
+    </ClInclude>
+    <ClInclude Include="yuvToRgb.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="objectTrack\objectTrack.h">
+      <Filter>objectTrack</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoProcessor.h">
+      <Filter>objectTrack</Filter>
+    </ClInclude>
+    <ClInclude Include="objectTrack\frameProcessor.h">
+      <Filter>objectTrack</Filter>
+    </ClInclude>
+    <ClInclude Include="objectTrack\CamShift.h">
+      <Filter>objectTrack</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\rec.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SDKDemo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SDKDemo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\talk.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
