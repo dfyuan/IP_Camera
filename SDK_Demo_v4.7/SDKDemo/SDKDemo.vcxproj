@@ -176,6 +176,7 @@
     </ClCompile>
     <ClCompile Include="objectTrack\CamShift.cpp" />
     <ClCompile Include="objectTrack\frameProcessor.cpp" />
+    <ClCompile Include="objectTrack\meanShift.cpp" />
     <ClCompile Include="objectTrack\objectTrack.cpp" />
     <ClCompile Include="OsdDlg.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -275,6 +276,7 @@
     <ClInclude Include="NetDlg.h" />
     <ClInclude Include="objectTrack\CamShift.h" />
     <ClInclude Include="objectTrack\frameProcessor.h" />
+    <ClInclude Include="objectTrack\meanShift.h" />
     <ClInclude Include="objectTrack\objectTrack.h" />
     <ClInclude Include="OsdDlg.h" />
     <ClInclude Include="OtherDlg.h" />

@@ -14,6 +14,7 @@
 
 #include "opencv2/opencv.hpp" 
 #include "yuvToRgb.h"
+#include "objectTrack.h"
 // extern "C" {
 // #include "yuv2rgb.h"
 // }

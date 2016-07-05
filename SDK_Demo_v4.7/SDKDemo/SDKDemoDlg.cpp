@@ -1076,8 +1076,10 @@ void CSDKDemoDlg::OnBtnPlayback()
 }
 
 cv::Mat m_mat;
+cv::Mat m_mat_out;
 YuvToRgb rgb;
 std::string str = "test";
+objectTrack ob;
 HRESULT CSDKDemoDlg::OnDecCallBack(HI_U32 u32Chn,
 								   const FRAME_INFO_S *pFrameInfo,
 								   HI_VOID *pUserData)
@@ -1088,6 +1090,7 @@ HRESULT CSDKDemoDlg::OnDecCallBack(HI_U32 u32Chn,
     if(m_mat.empty() || m_mat.cols != pFrameInfo->nWidth || m_mat.rows != pFrameInfo->nHeight)
     {
         m_mat.create(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC3);
+        m_mat_out = m_mat.clone();
         cv::namedWindow(str, 0);
         cv::resizeWindow(str, m_mat.cols * 0.5, m_mat.rows * 0.5);
     }
@@ -1096,10 +1099,12 @@ HRESULT CSDKDemoDlg::OnDecCallBack(HI_U32 u32Chn,
     if(!rgb.YUV12ToBGR(pFrameInfo, m_mat.datastart))  
     {  
         return NULL;  
-    } 
-    
+    }      
+
     cv::imshow(str, m_mat);                        
     cv::waitKey(1);
+    
+    ob.run(m_mat, m_mat_out);
 	return 0;
 }
 
