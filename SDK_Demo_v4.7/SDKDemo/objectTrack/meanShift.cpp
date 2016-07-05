@@ -1,7 +1,7 @@
 #include "meanShift.h"
 
 cv::Rect m_selection;//用于保存鼠标选择的矩形框
-bool trackObject; 
+int trackObject; 
 cv::Point origin;
 std::string displayStr = "CamShift Demo";
 bool selectObject = false;
@@ -28,7 +28,7 @@ void onMouse( int event, int x, int y, int flags, void* param)
     case CV_EVENT_LBUTTONUP:
         selectObject = false;
         if( m_selection.width > 0 && m_selection.height > 0 )
-            trackObject = true;
+            trackObject = -1;
         break;
     }
 }
@@ -60,12 +60,12 @@ MeanShift::MeanShift(int width, int height)
     cv::setMouseCallback( displayStr, onMouse, 0 );//消息响应机制
 
 
-    m_selection.x = 0;//矩形左上角顶点坐标
-    m_selection.y = 200;
-    m_selection.width = 100;//矩形宽
-    m_selection.height = 100;//矩形高
-    //     m_selection &= cv::Rect(0, 0, image.cols, image.rows);//用于确保所选的矩形区域在图片范围内
-    trackObject = true;
+    //m_selection.x = 0;//矩形左上角顶点坐标
+    //m_selection.y = 200;
+    //m_selection.width = 100;//矩形宽
+    //m_selection.height = 100;//矩形高
+    ////     m_selection &= cv::Rect(0, 0, image.cols, image.rows);//用于确保所选的矩形区域在图片范围内
+    trackObject = 0;
 
     //histing
 }
@@ -95,7 +95,10 @@ bool MeanShift::run(cv::Mat &image)
     int vmin = 10, vmax = 256, smin = 30;
 
     cvtColor(image, hsv, CV_BGR2HSV);//将rgb摄像头帧转化成hsv空间的
+    if( trackObject )//trackObject初始化为0,或者按完键盘的'c'键后也为0，当鼠标单击松开后为-1
+    {
 
+   
     int _vmin = vmin, _vmax = vmax;
 
     //inRange函数的功能是检查输入数组每个元素大小是否在2个给定数值之间，可以有多通道,mask保存0通道的最小值，也就是h分量
@@ -107,7 +110,7 @@ bool MeanShift::run(cv::Mat &image)
     hue.create(hsv.size(), hsv.depth());//hue初始化为与hsv大小深度一样的矩阵，色调的度量是用角度表示的，红绿蓝之间相差120度，反色相差180度
     mixChannels(&hsv, 1, &hue, 1, ch, 1);//将hsv第一个通道(也就是色调)的数复制到hue中，0索引数组
 
-    if(trackObject)//鼠标选择区域松开后，该函数内部又将其赋值1
+    if(trackObject < 0)//鼠标选择区域松开后，该函数内部又将其赋值1
     {
         //此处的构造函数roi用的是Mat hue的矩阵头，且roi的数据指针指向hue，即共用相同的数据，select为其感兴趣的区域
         cv::Mat roi(hue, m_selection), maskroi(mask, m_selection);//mask保存的hsv的最小值
@@ -118,7 +121,7 @@ bool MeanShift::run(cv::Mat &image)
         normalize(hist, hist, 0, 255, CV_MINMAX);//将hist矩阵进行数组范围归一化，都归一化到0~255
 
         trackWindow = m_selection;
-        trackObject = false;//只要鼠标选完区域松开后，且没有按键盘清0键'c'，则trackObject一直保持为1，因此该if函数只能执行一次，除非重新选择跟踪区域
+        trackObject = 1;//只要鼠标选完区域松开后，且没有按键盘清0键'c'，则trackObject一直保持为1，因此该if函数只能执行一次，除非重新选择跟踪区域
 
         histimg = cv::Scalar::all(0);//与按下'c'键是一样的，这里的all(0)表示的是标量全部清0
         int binW = histimg.cols / hsize;  //histing是一个200*300的矩阵，hsize应该是每一个bin的宽度，也就是histing矩阵能分出几个bin出来
@@ -155,7 +158,7 @@ bool MeanShift::run(cv::Mat &image)
 //     cvtColor( backproj, image, CV_GRAY2BGR );//因此投影模式下显示的也是rgb图？
 //     ellipse( image, trackBox, cv::Scalar(0,0,255), 3, CV_AA );//跟踪的时候以椭圆为代表目标 
     rectangle(image,cv::Point(trackWindow.x,trackWindow.y),cv::Point(trackWindow.x+trackWindow.width,trackWindow.y+trackWindow.height),cv::Scalar(0,0,255),2,CV_AA);
-
+    }
      if( selectObject && m_selection.width > 0 && m_selection.height > 0 )
      {
            cv::Mat roi(image, m_selection);
